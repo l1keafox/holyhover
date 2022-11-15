@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+*{
+  --border : rgb( 15,85,199);
+  --g1: rgb(50,100,0);
+  --g2: rgb(150,100,25);
+  --g3: rgb(8, 69, 235);
+
+
+}
+body {
+  background-color: rgb(20, 20, 20);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+  aspect-ratio: 1/1.6;
+  border: 0.5vmin solid var(--border);
+  cursor: pointer;
+  position: relative;
+  width: 56vmin;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card:hover:before{
+  background-position: 100% 100%;
+  transform:scale(1.08,1.03)
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card-content {
+  background:radial-gradient(
+    rgba(245, 237, 237, 0.2) 8%,
+    transparent 8%
+  );
+  background-position: 0% 0%;
+  background-size: 5vmin 5vmin;
+  transition: background-position 250ms ease;
+  height: 100%;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.card:hover > .card-content {
+  background-position: -10% 0%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card:before {
+  background: linear-gradient(
+    130deg,
+    transparent 0% 33%,
+    var(--g1) 66%,
+    var(--g2) 83.5%,
+    var(--g3) 100%
+  );
+  background-position: 0% 0%;
+  background-size: 300% 300%;
+  transition: background-position 350ms ease, transform 350ms ease;
+  content: "";
+  height: 100%;
+  left: 0px;
+  position:absolute;
+  top: 0px;
+  width: 100%;
 }
