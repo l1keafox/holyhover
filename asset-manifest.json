@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/holyhover/static/css/main.dc10052a.css",
+    "main.js": "/holyhover/static/js/main.5843570a.js",
+    "static/js/787.dd168a75.chunk.js": "/holyhover/static/js/787.dd168a75.chunk.js",
+    "index.html": "/holyhover/index.html",
+    "main.dc10052a.css.map": "/holyhover/static/css/main.dc10052a.css.map",
+    "main.5843570a.js.map": "/holyhover/static/js/main.5843570a.js.map",
+    "787.dd168a75.chunk.js.map": "/holyhover/static/js/787.dd168a75.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc10052a.css",
+    "static/js/main.5843570a.js"
+  ]
+}
