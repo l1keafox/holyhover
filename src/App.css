@@ -1,8 +1,8 @@
 *{
-  --border : rgb( 15,85,199);
+  --border : rgb(165, 180, 202);
   --g1: rgb(50,100,0);
   --g2: rgb(150,100,25);
-  --g3: rgb(8, 69, 235);
+  --g3: rgb(233, 37, 37);
 
 
 }
@@ -20,7 +20,7 @@ body {
 
 .card:hover:before{
   background-position: 100% 100%;
-  transform:scale(1.08,1.03)
+  transform:scale(1.01,1.01)
 }
 
 .card-content {
